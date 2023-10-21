@@ -1,0 +1,9 @@
+<h1>Lista de Posts: </h1>
+{{#each posts}}
+    <h1>Id: {{id}}</h1>
+    <h2>Titulo: {{titulo}}</h2>
+    <p>Conteudo: {{conteudo}}</p>
+    <p>Data: {{createdAt}}</p>
+    <a href="/deletar/{{id}}"><button>Deletar</button></a>
+    <a href="/alterar/{{id}}"><button>Alterar</button></a>
+{{/each}}

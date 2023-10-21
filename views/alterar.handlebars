@@ -1,0 +1,15 @@
+<form action="/update" method="POST">
+{{#each posts}}
+    <p>Código: </p>
+    <input type="text" name="id" value="{{id}}" readonly="true">
+
+    <p>Titulo: </p>
+    <input type="text" name="titulo" value="{{titulo}}">
+
+    <p>Conteudo: </p>
+    <textarea name="conteudo">{{conteudo}}</textarea>
+
+    <input type="submit" value="Alterar">
+    <hr>
+{{/each}}
+</form>
